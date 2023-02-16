@@ -35,14 +35,16 @@ $(document).ready(function () {
             email: {
                 required: true,
                 email: true
-            }
+            },
+            policy: "required",
         },
         messages: {
             name: "Будь ласка, вкажіть своє ім'я",
             email: {
                 required: "Нам потрібна ваша електронна адреса, щоб зв'язатися з вами",
                 email: "Ваша електронна адреса повинна бути у форматі name@domain.com"
-            }
+            },
+            policy: "Будь ласка, прийміть нашу політику"
         }
     });
 
@@ -58,11 +60,18 @@ $(document).ready(function () {
             url: "mailer/smart.php",
             data: $(this).serialize()
         }).done(function() {
-            $(this).find("input").val("");
-            // $('#consultation, #order').fadeOut();
+            $(this).find("input", "textarea").val("");
             // $('.overlay, #thanks').fadeIn();
             $('.contacts__form').trigger('reset');
         });
         return false;
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 950) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
     });
 });
