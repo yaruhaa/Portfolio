@@ -1,0 +1,130 @@
+.contacts
+    padding: 60px 0 90px 0
+    background-color: #ebf0fc
+    &__grid
+        display: grid
+        margin: 0 auto
+        grid-template-columns: 450px 1fr
+        grid-template-rows: auto
+        column-gap: 100px
+        row-gap: 40px
+    &__img
+        width: 100%
+        grid-row: 1/3
+    &__title
+        color: $second-color
+    &__subtitle
+        color: black
+    &__divider
+        margin-top: 5px
+        @include before_divider
+    &__text
+        margin-top: 20px
+        color: black
+    &__social
+        position: relative
+        margin-top: 20px
+        width: 290px
+        height: 30px
+        display: flex
+        justify-content: space-between
+        .tooltip
+            position: absolute
+            top: 0
+            left: 45px
+            font-size: 12px
+            background: $main-color
+            color: white
+            padding: 5px 8px
+            border-radius: 5px
+            opacity: 0
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+            pointer-events: none
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+            &:before
+                position: absolute
+                content: ""
+                height: 8px
+                width: 8px
+                background: $main-color
+                top: 50%
+                left: 0
+                transform: translateX(-50%) rotate(45deg)
+                transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+            //&_telegram
+            //    left: -22px
+            &_instagram
+                left: 170px
+            &_github
+                left: 300px
+        .icon:hover .tooltip
+            opacity: 1
+            pointer-events: auto
+    &__alttext
+        margin-top: 20px
+        color: black
+    &__form
+        margin-top: 30px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+        gap: 25px
+        .error
+            color: red
+            font-size: 14px
+            line-height: 18px
+            font-weight: 500
+    &__input
+        max-height: 75px
+        input
+            background-color: #e6ecfd
+            border: 1px solid $main-color
+            border-radius: 10px
+            width: 100%
+            padding: 0 20px
+            font-size: 12px
+            line-height: 18px
+            font-weight: 500
+            height: 45px
+            color: black
+            outline: none
+            &:focus
+                border: 2px solid $main-color
+    &__textarea
+        grid-column: 1/3
+        height: 190px
+        textarea
+            background-color: #e6ecfd
+            border: 1px solid $main-color
+            border-radius: 10px
+            padding: 10px 20px
+            height: 100%
+            width: 100%
+            resize: none
+            font-size: 12px
+            line-height: 18px
+            font-weight: 500
+            color: black
+            outline: none
+            &:focus
+                border: 2px solid $main-color
+    &__triggers
+        grid-column: 1/3
+        display: grid
+        grid-template-columns: repeat(2, auto)
+        column-gap: 35px
+        button
+            color: white
+            width: 260px
+    &__policy
+        position: relative
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        display: flex
+        align-items: center
+        input
+            margin-right: 10px
+        label
+            position: absolute
+            top: 40px

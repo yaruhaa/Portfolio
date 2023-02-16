@@ -1,0 +1,213 @@
+.menu__pc
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 3
+    &_list
+        padding: 0 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style-type: none
+        height: 75px
+    &_link
+        a
+            color: white
+            &:hover
+                text-decoration: none
+                color: $main-color
+        .language
+            color: $second-color
+
+    //    &:before
+    //        content: ''
+    //        position: absolute
+    //        left: -35px
+    //        top: 10px
+    //        width: 15px
+    //        height: 15px
+    //        border: 1px solid white
+    //        border-radius: 100%
+
+    //&__overlay
+    //    position: fixed
+    //    top: 0
+    //    left: 0
+    //    width: 100%
+    //    height: 100%
+    //    background-color: black
+    //    opacity: .25
+
+    //&__social
+    //    position: absolute
+    //    left: 50%
+    //    transform: translateX(-50%)
+    //    bottom: 50px
+    //    width: 170px
+    //    display: flex
+    //    justify-content: space-between
+    //    height: 60px
+    //    padding-top: 40px
+    //    .tooltip
+    //        position: absolute
+    //        top: 0
+    //        left: 35px
+    //        font-size: 12px
+    //        background: white
+    //        color: black
+    //        padding: 5px 8px
+    //        border-radius: 5px
+    //        opacity: 0
+    //        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+    //        pointer-events: none
+    //        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    //        &:before
+    //            position: absolute
+    //            content: ""
+    //            height: 8px
+    //            width: 8px
+    //            background: white
+    //            bottom: -3px
+    //            left: 50%
+    //            transform: translate(-50%) rotate(45deg)
+    //            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    //        &_telegram
+    //            left: -22px
+    //        &_instagram
+    //            left: 45px
+    //        &_github
+    //            left: 128px
+    //    .icon:hover .tooltip
+    //        opacity: 1
+    //        pointer-events: auto
+
+//.hamburger
+//    position: absolute
+//    top: 25px
+//    right: 25px
+//    height: 30px
+//    width: 40px
+//    cursor: pointer
+//    z-index: 10
+//    span
+//        display: block
+//        height: 3px
+//        width: 100%
+//        background-color: white
+//        margin-bottom: 5px
+//        transition: .5s all
+//    &_active
+//        position: fixed
+//        span
+//            background-color: white
+//            margin-bottom: -2px
+//            &:nth-child(1)
+//                transform: translateY(3px) rotate(-45deg)
+//            &:nth-child(2)
+//                display: none
+//            &:nth-child(3)
+//                transform: translateY(3px) rotate(45deg)
+.menu__mobile
+    display: none
+//    position: fixed
+//    top: 0
+//    right: -100%
+//    width: 100%
+//    height: 100vh
+//    visibility: hidden
+//    opacity: 0
+//    z-index: 10
+//    display: flex
+//    justify-content: flex-end
+//    transition: all .5s
+//    &.active
+//        right: 0
+//        visibility: visible
+//        opacity: 1
+//    &__block
+//        padding: 140px 0 0 40px
+//        position: relative
+//        width: 350px
+//        height: 100%
+//        background-color: #0c3089
+//        transition: all .5s
+//        z-index: 10
+//    &__list
+//        list-style-type: none
+//        padding-left: 35px
+//    &__link
+//        position: relative
+//        font-weight: 700
+//        font-size: 24px
+//        line-height: 36px
+//        text-transform: uppercase
+//        margin-bottom: 15px
+//        &:before
+//            content: ''
+//            position: absolute
+//            left: -35px
+//            top: 10px
+//            width: 15px
+//            height: 15px
+//            border: 1px solid white
+//            border-radius: 100%
+//        &:hover
+//            &:before
+//                background-color: white
+//        a
+//            color: white
+//            &:hover
+//                text-decoration: none
+//                font-size: 26px
+//    &__overlay
+//        position: fixed
+//        top: 0
+//        left: 0
+//        width: 100%
+//        height: 100%
+//        background-color: black
+//        opacity: .25
+//
+//    &__social
+//        position: absolute
+//        left: 50%
+//        transform: translateX(-50%)
+//        bottom: 50px
+//        width: 170px
+//        display: flex
+//        justify-content: space-between
+//        height: 60px
+//        padding-top: 40px
+//        .tooltip
+//            position: absolute
+//            top: 0
+//            left: 35px
+//            font-size: 12px
+//            background: white
+//            color: black
+//            padding: 5px 8px
+//            border-radius: 5px
+//            opacity: 0
+//            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+//            pointer-events: none
+//            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+//            &:before
+//                position: absolute
+//                content: ""
+//                height: 8px
+//                width: 8px
+//                background: white
+//                bottom: -3px
+//                left: 50%
+//                transform: translate(-50%) rotate(45deg)
+//                transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+//            &_telegram
+//                left: -22px
+//            &_instagram
+//                left: 45px
+//            &_github
+//                left: 128px
+//        .icon:hover .tooltip
+//            opacity: 1
+//            pointer-events: auto

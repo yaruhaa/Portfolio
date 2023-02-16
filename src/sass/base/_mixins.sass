@@ -1,0 +1,15 @@
+@mixin before_oval
+    &:before
+        content: ''
+        position: absolute
+        height: 40px
+        width: 40px
+        border-radius: 100%
+        background-color: $main_color
+        z-index: -1
+        top: -7px
+        left: -7px
+@mixin before_divider
+        width: 70px
+        height: 3px
+        background-color: $main-color

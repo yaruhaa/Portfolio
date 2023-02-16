@@ -1,0 +1,81 @@
+.resume
+    padding: 120px 65px 0 65px
+    background-color: #ebf0fc
+    &__title
+        color: $second-color
+        text-align: center
+    &__subtitle
+        color: black
+        text-align: center
+        margin-top: 5px
+    &__divider
+        margin: 25px auto 0 auto
+        @include before_divider
+    &__grid
+        margin-top: 60px
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        column-gap: 130px
+    &__column
+        padding-left: 40px
+        .column__title
+            position: relative
+            color: black
+            &:before
+                content: ""
+                position: absolute
+                width: 15px
+                height: 15px
+                border-radius: 100%
+                background-color: $main-color
+                left: -47px
+                top: 50%
+                transform: translateY(-50%)
+        ul
+            list-style-type: none
+            li
+                position: relative
+                &:after
+                    content: ""
+                    width: 1px
+                    height: 100%
+                    position: absolute
+                    top: -16px
+                    left: -40px
+                    background-color: black
+                .column__item
+                    position: relative
+                    &:before
+                        content: ""
+                        height: 1px
+                        width: 40px
+                        position: absolute
+                        background-color: black
+                        top: 67px
+                        left: -40px
+                    .item__head
+                        position: relative
+                        padding: 45px 0 0 50px
+                        .head__icon
+                            position: absolute
+                            top: 48px
+                            left: 1px
+                            width: 40px
+                            height: 40px
+                            //@include before_oval
+                            img
+                                display: block
+                                margin: 0 auto
+                                width: 100%
+                        .head__title
+                            color: black
+                        .head__location
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 18px
+                    .item__body
+                        margin-top: 10px
+                        color: black
+                        font-weight: 500
+                        font-size: 12px
+                        line-height: 18px
